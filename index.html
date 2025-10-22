@@ -1,69 +1,113 @@
-<!DOCTIPE html>
-<html>
-	<head>
-		<title> Ublot</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ublot</title>
 
-	
-		<style>
-			body {
-			text-align:center;
-			background-color:#ef0505;
-			font-family:garamond;
-			}
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: linear-gradient(180deg, #ff3c3c, #b30000);
+      font-family: "Arial Black", Garamond, sans-serif;
+      color: white;
+    }
 
-			h1{
-			font-size:350px;
-			font-family:Arial;
-			color:#0cd3f2;
-			text-shadow:4px 4px 3px black;
-			margin-top:0px;
-			margin-bottom:10px;
-			text-decoration:underline;			
-			}
+    header {
+      padding: 60px 20px;
+    }
 
-			h2{
-			font-size:325px;
-			font-family:Arial;
-			color:#140cf2;
-			margin-top:0px;
-			margin-bottom:10px;
-			}
+    h1 {
+      font-size: 8rem;
+      color: #0cd3f2;
+      text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.8);
+      margin: 0;
+      text-decoration: underline;
+      letter-spacing: 5px;
+    }
 
-			marquee {
-			background-color:#f2f20c;
-			font-size:200px;
-			font-family:Arial;
-			}
+    h2.subtitle {
+      font-size: 3rem;
+      color: #140cf2;
+      margin-top: 20px;
+    }
 
+    .marquee {
+      background-color: #f2f20c;
+      color: black;
+      font-size: 2.5rem;
+      font-weight: bold;
+      padding: 15px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+      animation: scroll 12s linear infinite;
+    }
 
-			 .info p {
-			font-size:250px;
-			font-family:Arial;
-			text-align:justify;
-			}
+    @keyframes scroll {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
 
-			.info h2{
-			color:#140cf2;
-			font-size:250px;
-			font-family:Arial;
-			text-decoration:underline;
-			}
-		</style>
-	</head>
+    section.info {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      margin: 60px auto;
+      width: 80%;
+      max-width: 1200px;
+      text-align: left;
+    }
 
-	<body>
-		<h1> Ublot </h1>
-		<h2> The game in progress </h2>
-		<marquee> not coming out soon </marquee>
-		
+    .info h2 {
+      font-size: 3rem;
+      color: #0cd3f2;
+      text-decoration: underline;
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-		
+    .info p {
+      font-size: 1.8rem;
+      line-height: 1.6;
+      text-align: justify;
+      color: #f0f0f0;
+    }
 
-		<div class="info">
-			<h2> All about Ublot/h2>
-			<p>Ublot is a metroidvania, the story takes place in a planet far away when an alien chrashes into it...
-            </p>
-		</div>
-	</body>
+    footer {
+      margin-top: 60px;
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Ublot</h1>
+    <h2 class="subtitle">The Game in Progress</h2>
+  </header>
+
+  <div class="marquee">🚀 Not Coming Out Soon 🚀</div>
+
+  <section class="info">
+    <h2>All About Ublot</h2>
+    <p>
+      Ublot is a metroidvania set on a mysterious planet far away. When an alien
+      crashes on its surface, a journey begins through strange landscapes, hidden
+      ruins, and the secrets of an ancient civilization. Explore, fight, and uncover
+      what really happened on Ublot.
+    </p>
+  </section>
+
+  <footer>© 2025 Ublot Studios — Work in Progress</footer>
+</body>
 </html>
+
 
